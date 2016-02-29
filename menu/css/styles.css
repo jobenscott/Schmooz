@@ -1,0 +1,260 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+body::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+/* NAV SECTION */
+.custom-nav {
+	width: 100vw;
+	height: 10vh;
+	background-color: transparent;
+	position: fixed;
+	z-index: 50;
+}
+
+.nav-section-one, .nav-section-two, .nav-section-three {
+	position: relative;
+	float: left;
+	height: auto;
+	display: inline-block;
+}
+
+.nav-section-one {
+	width: 10%;
+}
+
+.nav-section-two {
+	width: 50%;
+	height: 100vh;
+}
+
+.nav-section-three {
+	width: 40%;
+}
+
+/* NAV SUB-SECTIONS*/
+
+.sub-section {
+	height: 50%;
+	display: inline-block;
+	color: #e6e6e6;
+	font-weight: 700;
+	font-size: 1.45vmin;
+	text-align: center;
+	line-height: 5.75;
+	float: right;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	text-decoration: none;		
+}
+
+.sub-section:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	
+}
+
+a.sub-section {
+   text-decoration: none !important;
+   color: #e6e6e6;
+   transition: color 1.75s;
+}
+
+, a.sub-section:hover {
+	text-decoration: none !important;
+   	color: white;
+   	transition: color 1.75s;
+}
+
+
+/* SPECIAL IN TOUCH SECTION */
+
+.in-touch-link {
+	height: 50%;
+	display: inline-block;
+	color: #e6e6e6;
+	font-weight: 700;
+	font-size: 1.45vmin;
+	line-height: 2.5;
+	margin-left: 15%;
+	transition: background-color 1.75s;
+	text-decoration: none;
+}
+
+.in-touch-link:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	transition: background-color 1.75s;
+}
+
+.get-in-touch-container {
+	margin-top: 2.5%;
+	position: relative;
+	border-radius: 50px;
+	border: solid white 2px;
+	width: 20%;
+	height: 40%;
+	display: inline-block;
+	float: right;
+	margin-right: 2.5%;
+}
+
+/* NAV MASK */
+
+.nav-mask {
+	width: 100vw;
+	height: 8.8vh;
+	background-color: black;
+	position: fixed;
+	z-index: 40;
+}
+
+/*hero image section*/
+
+.background-img-container {
+	position: absolute;
+	display: inline;
+	width: 100vw;
+	height: 60vh;
+	overflow: hidden;
+}
+
+.background-mask-container {
+	position: absolute;
+	display: inline;
+	width: 100vw;
+	height: 60vh;
+	z-index: 10;
+	background: black;
+	opacity: .35;
+}
+
+
+/*BACKGROUND CONTENT*/
+
+.background-content-container {
+	position: absolute;
+	width: 60%;
+	height: 20.5%;
+	margin: 19%;
+	margin-top: 10.75%;
+	z-index: 20;
+}
+
+
+.bg-content-one, .bg-content-two {
+	position: relative;
+	color: white;
+	font-size: 7.5vmin;
+	text-align: center;
+	height: 37.5%;
+	font-weight: 700;
+}
+
+/* ALTERING VIEW*/
+
+.altering-view {
+	/*display: block;*/
+	width: 100%;
+	/*padding-top: 60vh;*/
+}
+
+/* img section*/
+
+.logo {
+	position: relative;
+	width: 72.5%;
+	margin: 10.25%;
+}
+
+.background-img {
+	position: absolute;
+	width: 100%;
+	margin-bottom: 100%;
+	float: right;
+	top: -63.5%;
+}
+
+.background-img-small {
+	top: -125%;
+}
+
+/*other*/
+
+.sub-background-img-container, .sub-background-mask-container {
+	height: 35%;
+}
+
+/* HOME CONTENT (FOR BOTH HOME AND SUBHOME) */
+
+.content-section-one {
+	width: 100vw;
+	height: 40vh;
+	position: relative;
+	top: 60vh;
+}
+
+.home-header-one {
+	position: relative;
+	padding-top: 5%;
+	font-size: 3vmin;
+	text-align: center;
+	font-family: "adobe-garamond-pro";
+}
+
+.home-subheader-one {
+	width: 50%;
+	height: 20%;
+	position: relative;
+	padding-top: 0.5%;
+	padding-bottom: 7.5%;
+	font-size: 1.6vmin;
+	text-align: center;
+	font-family: "adobe-garamond-pro";
+	color: #8c8c8c;
+	margin: auto;
+	line-height: 2;
+	letter-spacing: 1.25;
+	font-weight: 100;
+
+}
+
+.content-img-container {
+	margin-left: 30.5%;
+	margin-bottom: 2.5%;
+}
+
+.home-header-two {
+	position: relative;
+	font-size: 2.5vmin;
+	text-align: center;
+	font-family: "adobe-garamond-pro";
+}
+
+.home-subheader-two {
+	width: 50%;
+	height: 20%;
+	position: relative;
+	padding-top: 0.5%;
+	padding-bottom: 5%;
+	font-size: 1.6vmin;
+	text-align: center;
+	font-family: "adobe-garamond-pro";
+	color: #8c8c8c;
+	margin: auto;
+	line-height: 2;
+	letter-spacing: 1.25;
+	font-weight: 100;
+}
+
+.home-learn-more {
+	margin-left: 48%;
+	margin-bottom: 10%;
+}

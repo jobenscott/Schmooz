@@ -1,0 +1,61 @@
+<html ng-app="schmoozApp">
+	<head>
+		<title>Shmooz | Home</title>
+		<!-- ANGULAR -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+		<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+			<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/other.js"></script>
+
+
+	</head>
+	<body ng-app>
+		<div ng-controller="mainController" class="main-container">		
+		<nav class="custom-nav">
+  			<div class="nav-section-one">
+  				<img class="logo" src="img/SchmoozLogo.png">
+  			</div>
+  			<div class="nav-section-two"></div>
+  			<div class="nav-section-three">
+  				<div class="get-in-touch-container">
+  					<a href="#getintouch" class="in-touch-link">GET IN TOUCH</a>
+  				</div>
+  				<a href="#events" class="sub-section">EVENTS</a>
+  				<a href="#aboutus" class="sub-section">ABOUT US</a>
+  				<a href="#oursoftware" class="sub-section">OUR SOFTWARE</a>
+  				<a href="#sub_home" class="sub-section">HOME</a>
+  			</div>
+		</nav>
+		<div ng-view class="altering-view"></div>
+		</div>
+
+		<script type="text/javascript">
+$(document).ready(function(){
+	var winPos = $('.custom-nav').offset().top;
+	var viewPos = $('.altering-view').offset().top;
+	var viewScrollBottom = $(window).scrollTop();
+
+	$(document).on('scroll', function() {
+		console.log(winPos);
+		console.log(viewPos);
+	    if(winPos > 400) {
+	        alert('hey');
+	    }
+	});
+});
+</script>
+	</body>
+</html>	
